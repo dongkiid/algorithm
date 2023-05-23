@@ -12,9 +12,6 @@
 #         result[grade][1] += 1 
 #         print(result)       
 
-# 파이썬에서 퓨틀은 immutable한 자료형으로, 
-# # 한번 할당된 요소를 수정할 수 없다
-
 # entire_student, max_human = list(map(int,input().split()))
 # woman = [0]*6
 # man = [0]*6
@@ -60,7 +57,7 @@ student = [[0,0] for _ in range(6)]
 
 for _ in range(n):
     sex,grade = map(int,input().split())
-    student[grade-1][sex] += 1 #student의 [grade] 위치에 여성이면 [grade][0](튜플 안에 첫번째요소) / 남성이면 [grade][1] (튜플 안에 두번째 요소)  
+    student[grade-1][sex] += 1 #student의 [grade] 위치에 여성이면 [grade][0](딕셔너리 안에 첫번째요소) / 남성이면 [grade][1] (딕셔너리 안에 두번째 요소)  
 #print(student)
 cnt = 0
 for level in student:
