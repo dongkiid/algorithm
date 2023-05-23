@@ -1,4 +1,4 @@
-#mCn으로 해결하는 조합 문제 
+#nCm으로 해결하는 조합 문제 
 # factorial 함수를 직접 만들어 해결 
 # math 모듈을 임포트해서 math.factorial(n)을 사용하는 방법도 있음
 
