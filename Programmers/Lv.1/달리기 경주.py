@@ -7,7 +7,7 @@ def solution(players, callings):
         players[faster], players[faster-1] =  players[faster-1], players[faster]
     return players
 
-# 2. 딕셔너리를 이용해 시간복잡도를 O(calling)으로 줄여서 문제 해결
+# 2. 딕셔너리를 이용해 시간복잡도를 O(players+calling)으로 줄여서 문제 해결
 def solution(players, callings):
     # 선수: 등수로 구성된 딕셔너리 생성 - key로 value를 O(1)의 시간복잡도를 이용해 인덱스 탐색
     result = {player:i for i,player in enumerate(players)}
